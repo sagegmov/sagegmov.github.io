@@ -4,14 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Page</title>
+    <title>GMOV Documentation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #44546a;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+            padding: 8px 12px;
+        }
+
+        .latest-update a {
+            color: #006400; /* Dark Green for the latest file */
+        }
+
+        .non-latest a {
+            color: #000; /* Black for non-latest files */
+        }
+
+        a:hover {
+            background-color: #44546a; /* Light blue on hover */
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to GMOV Documentation</h1>
-    <p>Latest Updates:</p>
-    <ul>
-        <li><a href="2023-Q4.html">2023-Q4</a></li>
-        <li><a href="2024-Q1.html">2024-Q1</a></li>
-    </ul>
+    <header>
+        <h1>Welcome to GMOV Documentation</h1>
+    </header>
+    <main>
+        <p>Latest Updates:</p>
+        <ul>
+            <li class="non-latest"><a href="2023-Q4.html">2023-Q4</a></li>
+            <li class="latest-update">
+                <a href="2024-Q1.html">2024-Q1</a>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
